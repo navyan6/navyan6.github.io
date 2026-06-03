@@ -1,1 +1,135 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .greeting {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #c2185b;
+            min-height: 4rem;
+            margin-bottom: 2rem;
+            line-height: 1.2;
+        }
+
+        .bio {
+            font-size: 1.3rem;
+            color: #c2185b;
+            min-height: 3rem;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeIn 0.3s ease-in forwards;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.1em;
+            background-color: #c2185b;
+            margin-left: 5px;
+            animation: blink 0.7s infinite;
+            vertical-align: middle;
+        }
+
+        @keyframes blink {
+            0%, 49% {
+                opacity: 1;
+            }
+            50%, 100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .bio.typing .cursor {
+            animation: blink 0.7s infinite;
+        }
+
+        .bio.done .cursor {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="greeting" id="greeting"></div>
+        <div class="bio" id="bio"></div>
+    </div>
+
+    <script>
+        const greetingText = "Hi! I'm Navya";
+        const bioText = "I'm interested in building interpretable models for biology and clinical AI";
+        const speed = 80; // milliseconds per character
+        const bioDelay = 500; // delay before bio starts typing (after greeting finishes)
+
+        let greetingIndex = 0;
+        let bioIndex = 0;
+
+        const greetingElement = document.getElementById('greeting');
+        const bioElement = document.getElementById('bio');
+
+        // Typewriter effect for greeting
+        function typeGreeting() {
+            if (greetingIndex < greetingText.length) {
+                greetingElement.textContent += greetingText[greetingIndex];
+                greetingIndex++;
+                setTimeout(typeGreeting, speed);
+            } else {
+                // Greeting finished, start bio after delay
+                greetingElement.innerHTML = greetingText;
+                setTimeout(startBio, bioDelay);
+            }
+        }
+
+        // Typewriter effect for bio
+        function startBio() {
+            bioElement.classList.add('typing');
+            typeBio();
+        }
+
+        function typeBio() {
+            if (bioIndex < bioText.length) {
+                bioElement.textContent += bioText[bioIndex];
+                bioIndex++;
+                setTimeout(typeBio, speed);
+            } else {
+                // Bio finished
+                bioElement.classList.remove('typing');
+                bioElement.classList.add('done');
+                bioElement.innerHTML = bioText;
+            }
+        }
+
+        // Start the animation when page loads
+        window.addEventListener('load', typeGreeting);
+    </script>
+</body>
+</html>
