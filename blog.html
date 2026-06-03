@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navya's Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f0d7de;
+            font-family: 'Courier New', Courier, monospace;
+            color: #2c3e50;
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .blog-title {
+            display: none;
+        }
+
+        .intro-message {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+        }
+
+        .blog-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        .blog-post {
+            padding: 2rem;
+            background-color: white;
+            border-left: 4px solid #2c3e50;
+            border-radius: 4px;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .post-date {
+            font-size: 0.95rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+
+        .post-content {
+            color: #2c3e50;
+            line-height: 1.8;
+        }
+
+        .post-content p {
+            margin-bottom: 1.2rem;
+        }
+
+        .post-content a {
+            color: #2c3e50;
+            text-decoration: none;
+            border-bottom: 1px solid #2c3e50;
+        }
+
+        .post-content a:hover {
+            background-color: rgba(44, 62, 80, 0.1);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: #2c3e50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="blog-title">Navya's Blog</h1>
+            <p class="intro-message">My (not always current) thoughts on various topics! Feel free to read, agree, disagree, and reach out 😊</p>
+        </header>
+
+        <div class="blog-posts">
+            <!-- Post 1: Ineffective Altruism -->
+            <div class="blog-post">
+                <h2 class="post-title">Ineffective Altruism</h2>
+                <p class="post-date">April 10th, 2026</p>
+                <div class="post-content">
+                    <p>There is something temporally interesting about what we find socially acceptable. For example, in 1847, when scientist Ignaz Semmelweis made the discovery that hand washing would reduce cases of fever, he was commited to an asylum. Now, we don't think twice about a quick rinse before a meal.</p>
+                    <p>There definitely exists a spectrum of ambiguity here, where evidence-based ideas with such stark positive impact (i.e. handwashing) simply need time, rather than debate, to become socially acceptable. Others, on the other hand, that are not outcome-driven, are more open for interpretability. There are dozens of moral frameworks and scientific theories that time has not clarified. Will following kantianism or utilitarianism produce the most impact on the world? It's up to personal beliefs, but I suppose ambiguity in this sense results in multiple correct answers working towards a common goal. A while ago, however, I came across a new tech-driven moral framework that seems to be the current religion of silicon valley: effective altruism. While I will detail my personally negative beliefs on this theory here, I also see its merits, and therefore am curious as to how time will treat it. It's perfectly possible that year 2126 will be one crawling with EAs in a world without suffering.</p>
+                    <p>Essentially, EA comes down to two ideas: (1) define 'doing good' as some measureable objective and (2) pour money and resources into maximizing this metric. i.e. quantification of good.</p>
+                    <p>When I first heard and read about this body of thought, I thought "well of course this is good for the world!" But after more thinking and conversation, I've realized that many aspects of effective altruism are pretty much the opposite, and may even enable greed.</p>
+                    <p>I think it's important to realize that anyone can mentally deem themselves an effective altruist, but there does seem to exist a socioeconomic barrier of entry to practice EA. Some of the most famous EAs are Elon Musk, Jean Tallinn, and Peter Thiel — all uncoincidentally multimillionaires. This is because EAs focus on 'earning to give,' where they build generational wealth with the mindset of optimizing its use.</p>
+                    <p>Most EAs tend to pour this built wealth into mitigating a few well-known existential risks, arguing for example that if AGI has the capability to turn earth into a black hole, its worth putting millions into AGI research even if this has negligible probability. Focusing on long term risks has its own benefits, but I worry that EAs spend so much time optimizing how to save the world a million years from now that they overlook the suffering going on *right now*.</p>
+                    <p>For example, EAs as a whole dont seem to care much about climate change. I believe that this is because (1) it currently isn't an existential risk (probably won't blow up the earth within our lifetimes), and (2) uproots the lives of mostly nonwhite low-income individuals. I agree that some focus on thinking for the future can mitigate long term risks, but there is no reason for the people with the greatest capacity for effecting change to virtually ignore today's biggest problems.</p>
+                    <p>What is the best metric for 'overall good?' Illness prevented, money saved, or emmissions reduced? Building community? Donating food or clothes? How do I possibly measure the 'good' I did by checking in on someone or buying a meal for a homeless person? None of these actions are particularly 'effective,' but the impact that they have on real lives is immeasurable. EAs neglect small opportunities for good with a veil of rationality, but I think the most 'ineffective' actions show the most about who we are and what we value.</p>
+                    <p>Altruism can tell a story. I recently passed by a student group on campus supporting sexual assault survivors by creating an artistic display of honeycombs, each sharing a different message. I then spent 20 minutes of my time donating $20, decorating a hexagon with the message 'clothing is not an invitation!' and getting to know the people at the table. While later in my career I'm sure I would have the financial resources to support this same cause with substantially more capital, those 20 minutes taught me things about tech community and culture that I never knew. The purest form of altruism can be attained without piles of wealth. Whether someone spends time at the community garden, volunteers at food banks, or does climate change research reveals a beautifully unique part of their sense of self.</p>
+                    <p>In todays world, scientists, builders, and drivers of tech hold undeniably immense power. So let's use that power to show that good deeds don't need to be optimized, planned, or 'effective' to be worthy.</p>
+                </div>
+            </div>
+
+            <!-- Post 2: Kerala -->
+            <div class="blog-post">
+                <h2 class="post-title">A Visit to God's Own Country</h2>
+                <p class="post-date">January 1st, 2026</p>
+                <div class="post-content">
+                    <p>First and foremost, happy new year! I am very grateful that I had the time to write and share my 2025 musings :)</p>
+                    <p>The two things I remember most from my recent trip to Kerala, India are the colors green and red. Green enveloped me: the expansive natural beauty, miles of tea farms, and aromatic spice gardens hold strikingly vivid in my memory. The other key detail I remember was placed on every other tree or so, a reminder of very human involvement amongst the greenery: frequent red communist flags. At first, the sight shocked me. India is a democratic country and I always thought of Indian government in the context of the BJP and congress — unaware of the strong southern Marxist party and its quiet successes. After doing some post hoc research, I believe it is the strongest functioning communist party in a fully democratic country.</p>
+                    <p>In American social studies classes, I learned (putting this in the best way possible) that communism is difficult: difficult to implement as envisioned, difficult to manage without beaurocracy and corruption, and difficult to create a society in which people can thrive. So, I was surprised to see what I felt was the closest successful recreation of the manifesto. Why was communism working in Kerala? What were its practical benefits and drawbacks and what about them separates Kerala from other Indian regions?</p>
+                    <p>Kerala, as a state, boasts many accomplishments, from a 100% (!!! wow) literacy rate, to religious tolerance (!!! wow), to the elimination of extreme poverty, so I think its worth understanding how its government enables these successes. (here, I could summarize Kerala's govt structure and relevant history, but I think thats better done through a simple wikipedia search).</p>
+                    <p>As I was reading about the many facets of this system (unions creating better living conditions, land reform giving workers property ownership, and a religious renaissance virtually eliminating the caste system), I genuinely began to question why more nations weren't adopting similar strategies. I then realized, however, that Kerala does in fact contain the same common issues of communism, with one key difference. A lack of booming industry, unrest from unions, and high political bureaucracy definitely exist there, but unlike in other communist countries, overseas citizens seem to be throwing lifelines.</p>
+                    <p>When Mallu people move away from Kerala to other countries, they historically have sent back huge sums of money called remittances. These sums are so astonishingly high and make up such a large proportion of overall revenue that Kerala pretty much guarantees its success independent of political state.</p>
+                    <p>But I also believe that its success is partially driven by the design of the two-party system. Much like any other country where either end of the political spectrum grounds the other and promotes progress, if the communist party existed without its (less popular) democratic counterpart, Kerala would not have attained the same glory. i.e. No room for complacency! If communism wasn't providing real value to people, the congress would take over — and historically it did! Every 5 years or so the congress (dem) party would reclaim power and the marxists would need to improve their ways, usually resulting in reconnecting with their voter base and improving the lives of lower classes.</p>
+                    <p>Did Kerala need communism to achieve this aforementioned success? I believe that, yes, some of Kerala's unique successes are facets of Marxism alone, but as a result, it may never boast some of the accomplishments open to the rest of India. Delhi, Bengaluru, Mumbai, Hyderabad, and more are all HUGE and growing urban tech hubs, which seems unlikely to ever happen in Cochin or Trivandrum. Coincidentally, we flew directly from Cochin to Delhi, and I saw this stark difference with my own eyes.</p>
+                    <p>Leaving Kerala, I am grateful for two things: the ability to experience its beauty and hospitality, and the chance to learn bits and pieces of its history and inner workings.</p>
+                    <p>Merry Christmas and Happy New Year to the place that inspired me with its Christmas colors!</p>
+                </div>
+            </div>
+
+            <!-- Post 3: On the Basis of Intelligence -->
+            <div class="blog-post">
+                <h2 class="post-title">On the Basis of Intelligence</h2>
+                <p class="post-date">November 20th, 2025</p>
+                <div class="post-content">
+                    <p>At age 12, I believed that intelligence came internally from memory and externally from validation. I spent hours memorizing the names of bones and muscles for Science Olympiad tests, feeling 'smart' when peers and teachers praised me for my successes. I thought that intellect was something you could hold in your hands, seeing the most decorated students deemed the most intelligent. The formula (study, score higher, gain brain points) was comforting, and I assumed this paradigm for the rest of the world.</p>
+                    <p>That perspective has definitely shifted significantly through high school and beyond, but reading the short story Flowers for Algernon recently made me consider it more deeply. Charlie's line, "I just want to be smart like other pepul so I can have lots of frends who like me," carries painful honesty. He wants an operation to increase his IQ in hopes of acceptance from the world around him, not so he can chase fame, but to move through the world with belonging.</p>
+                    <p>The way people treat Charlie as he gains intelligence is downright worrisome. Dr. Nemur refers to him as "practically an inanimate object," suggesting that once someone's IQ drops below a certain societal threshold, we quietly shift them into a category that feels less than fully human, somehow unworthy of decency and respect.</p>
+                    <p>Each main character seems to represent a different version of intelligence: intelligence combined with (1) arrogance, (2) humility, and (3) missing emotion. (1) Nemur embodies the type that comes with arrogance, the kind that uses knowledge to build distance and superiority rather than connection. His intelligence is focused on control, classification, and proof, and in that mindset, Charlie becomes more experiment than human. (2) On the other hand, Alice represents intelligence intertwined with kindness. She notices, listens, and pays attention to Charlie as a whole human being, both before and after the operation. (3) Charlie, after the operation, becomes the version of intelligence that looks impressive from the outside and deeply lonely from the inside, highlighting an absence of balance between IQ and EQ. Charlie's pain comes from the widening gap between what his mind is capable of and what his heart knows how to hold. So instead of the belonging he originally craved, he meets with induced isolation.</p>
+                    <p>I think about this tension in the context of the world we live in now. In a time when answers to factual questions are at our fingertips every waking hour, the ability to think deeply and critically often gets overshadowed. It saddeningly has become easier to retrieve information than to wrestle with it, and amidst our busy lives, we forget we used to think. It sounds silly, but the convenience of having information readily available has led to a phenomenon sometimes called "digital amnesia." Relying on devices to store and retrieve facts weakens our habit of remembering and processing information on our own. Confusion starts to feel less like a natural step in learning and more like an inconvenience to be avoided. I honestly feel this within myself. In high school, I would grapple with chemistry problems, accepting this time as part of the mental process and never considering mental energy a waste. Now, I fight the urge to tell myself I'm 'wasting time' when I'm truly just learning.</p>
+                    <p>On top of that, in a culture that sometimes equates intelligence with certainty and infallibility, the value of intellectual humility can disappear. In college, I notice a difference between quiet and proclaimed intelligence. There are people whose intelligence you understand through the questions they ask and the way they listen, and others who feel the need to proclaim how much they know. It is not that the latter are not intelligent (they definitely are!), but I believe that one of the most important parts of whole intelligence is recognizing that there exists no upper bound.</p>
+                    <p>Even with all of this, I do not wish that tools like GPT were never invented. Technology did not erase intelligence, it reshaped the skills that are easiest to access and the ones that require intentional effort. In a strange twist, I believe this might help us notice the beauty of manual thought again. Using a rather simplistic comparison, I think about it like cursive. If people don't intentionally write in cursive, it will gradually be replaced by standard print and typing. When you do see it, however, it is intricate and beautiful, precisely because it feels human and effortful.</p>
+                    <p>Intelligence feels similar now. Memory, focus, patience, and reflection will not survive by accident. They have to be chosen.</p>
+                    <p>I am still untangling my twelve year old belief that intelligence is a mix of recall and praise. I still feel a small thrill when I get something right or understand something complex. But as I grow older, I am starting to notice that the people I respect most are not the ones who dominate every conversation or have a fact ready at all times. They are the ones who stay curious, who admit what they do not know, and who are willing to be wrong without crumbling. They are the ones who treat intelligence as a practice, a perspective I've recently found both necessary and invaluable.</p>
+                </div>
+            </div>
+
+            <!-- Post 4: Medical Superintelligence -->
+            <div class="blog-post">
+                <h2 class="post-title">Medical Superintelligence + Importance of Interp</h2>
+                <p class="post-date">July 26th, 2025</p>
+                <div class="post-content">
+                    <p>I recently read <a href="https://arxiv.org/pdf/2506.22405" target="_blank">this paper</a> released by Microsoft on clinical language models, where they had models act as different roles in the medical team (i.e. one patient model withholding information, one devil's advocate, one test chooser, etc) to come up with a sequential diagnoses. The models performed extremely well on difficult cases from the New England Journal of Medicine, but it wasn't its high predictive accuracy that I found interesting.</p>
+                    <p>There are a number of wonderful papers in the clinical AI space, but this one stood out to me in particular because it seemed extremely grounded in real-world healthcare system capabilities: one of its performance metrics was the USD cost of each test and each visit, and agents were biased against choosing more expensive tests, simulating real-world circumstances. This is important for the following reason. Many ML-healthcare models create a false sense of competency when boasting 99% diagnostic accuracy, often eliciting the thought of 'if it were that easy, shouldn't this be cured by now?' I'm sure if every doctor had access to every test, medication, and resource, a lot of preventable diseases simply wouldn't exist today.</p>
+                    <p>5 years ago, people were confidently claiming that "5 years from now, AI will replace radiologists and derm for sure, the models are already 90+% accurate!" 5 years later, while the field has considerably changed with technology, that claim is very much not the case. (see (3)) A couple things are key to understand here.</p>
+                    <p>(1) ML provides beautiful frameworks for dealing with unstructured data, and will be useful in finding patterns in vast volumes of multimodal data (demo, symptoms, genetics, imaging) that may elude the human mind. ML also provides the benefit of continuous monitoring (i.e. social media), which a human cannot feasibly do. For mental health conditions in particular, the hope is that through integrating multimodal datastreams, we can come up with personalized, biologically based diagnostic markers rather than rely on subjective descriptive symptoms. Using these tools, healthcare professionals could focus on more difficult cases, increase volume of patients seen, and reduce diagnostic error. (The MSR paper claims that 1 set of agents = 21 practicing physicians)</p>
+                    <p>(2) A model is only as good as its data. High predictive power comes from models trained on gigantic datasets, like the UK BioBank, China Brain Project, NEJM cases from Mass Gen, etc. But what happens when patients have characteristics dissimilar to patients from these cohorts? Lower predictive accuracy.</p>
+                    <p>Here, however, I argue that regardless, clinical AI is a huge step towards medical equity. If an LLM can simply suggest a human doctor's visit to an unsuspecting patient because of some data-driven inconsistency, (warning signs on social media, telling GPT about lack of nutrition, etc), early diagnosis can save a life. In other words, rather than automating the process at the clinical stage, we're bringing potential patients in earlier, increasing access to care. Incredible.</p>
+                    <p>(3) While I personally don't think they will ever be fully replaced (**), doctors and pre-med students should be AI literate and realize that their jobs and lives might change pretty dramatically. Human medical professionals are incredible. They retain large volumes of information in a cognitive, caffeine-fueled database and pull the right information at the right time to save lives. However, in the age of superintelligence, the human 'superpower' cannot be information recall, as this is something AI has already mastered. GPT-4 can achieve a near perfect score on the USMLE, the most rigorous assessment of clinical knowledge. Instead, there are a couple key areas in which I believe human experience remains the advantage.</p>
+                    <p>(** this is truly my personal opinion. In my medical experience as a patient in both routine visits and emergency room adventures, 80% of the value I derive from medical visits comes from the human contact element. God bless good bedside manner. However, I don't deny that 99% of the 'diagnostic' element could have been performed by a large language model. Many ML heads I know would actually prefer to be seen by a language model finetuned on all of their medical records to avoid any likely human error.)</p>
+                    <p>(3.1) Complex interdisciplinary cases. There is simply not enough data with ground truth diagnoses for models to be trained, so clinical experience is vital. Ex: a complex pediatric heart cancer that has only been found in &lt;10 patients. Additionally, although hopefully becoming increasingly rare, some of these cases have only been seen and documented by human memory in places with no consistent health record systems.</p>
+                    <p>(3.2) Treading around hard-to-discuss areas, especially in mental health. While GPT can generally act as a confidante for most problems (being anon encourages seeking help, imo), medical alignment has led models to avoid discussing topics like substance abuse, depression, etc, rather than attempting to create a treatment plan. For example, in a user's mental health conversation, as soon as substances are mentioned, DeepSeek and ChatGPT both produce the following response (or a semantic alternative). "I am concerned that you are abusing pain medicine. I would like for you to consider a substance use disorder treatment program."</p>
+                    <p>Additionally, mental health illnesses are fundamentally unique. First off, they rely on subjective clinical observation rather than some sort of anatomical measurement (I realize this is an oversimplification!). They also manifest very differently in different people, making it hard for models to generalize to different patient populations, especially because collecting data from randomized control studies is difficult due to informed consent. All of these challenges make human expertise in psych vital. I do believe, however, that AI systems have unique benefits in mental health, and could 10x the productivity of any healthcare professional. See section 1 for what that entails in my mind.</p>
+                    <p>The biggest bottleneck in healthcare AI today is adoption and trust. I think before healthcare professionals can fully use AI, they have to fully understand its thought process. Uninterpretable blackbox models = unfair clinical decisions. The Microsoft paper attempted to show a clinical chain of thought, but what was still unclear was how the model came to those individual conclusions. A very simple example: a patient states they have a headache, runny nose, and body aches. The model initially posits the common cold, then the flu, and finally covid. Covid may be the correct diagnosis, but how do we validate that the model came to that conclusion in the correct manner? What if all training samples for Covid were of Asian females from Georgia Tech, so when faced with a similar patient the model automatically landed on covid? Even though we have a 'chain of thought,' we still need more clarity. In my opinion, interp will be what prevents adoption of AI in many fields, not just medicine. As capabilities grow, humans become increasingly wary of yielding control to a system whose thinking they cannot see - and understandably so! Human doubt fuels alignment innovation.</p>
+                    <p>TLDR: No matter when they were trained, what specialty they're in, or what circumstance they are living in, healthcare professionals should open their eyes to the magic (from my perspective) or killer intelligence (doomers might say) coming their way.</p>
+                </div>
+            </div>
+
+            <!-- Post 5: Thoughts on Human Thought -->
+            <div class="blog-post">
+                <h2 class="post-title">Thoughts on Human Thought</h2>
+                <p class="post-date">July 4th, 2025</p>
+                <div class="post-content">
+                    <p>On a recent road trip, I found myself listening with curiosity as my friend confidently named all the types of trees we passed along the way. Initially, I was impressed by the sheer volume of information she stored in her brain concerning a subject I don't find particularly riveting. As I listened to her claim that we first passed an oak, then ginkgo, then magnolia, etc. identified due to leaf shape/color/count, I had two general concerns. (1) I feel as though I have gotten considerably more gullible over time. Short of claiming she saw a carrot tree, I would have consumed any amount of misinformation, not because I lack the ability to verify, but because when information is presented to us, our first thought is to accept it as given. It doesn't take much effort to ensure accuracy, but lately, with the transition of knowledge gain shifting from search engines to agentic tools, I've felt the activation energy to do so increase. (2) This goes far beyond my disinterest in foliage. The power of information dissemination has grown considerably since the rise of algorithmic social media, and continues to build with the rise of LLM agents. Simply put, it's mind control. Social media algorithms alter our opinions on everything from politics to religion to healthcare, pushing that 20 second video that will provide the perfect dopamine rush. Scrolling platforms embody the ideal low effort high reward package. Who would spend 15 minutes reading a CNN article when TikTok can feed a 15 second summary? Who would search the internet to read a political platform when Claude can generate an understandable, human-sounding explanation in milliseconds?</p>
+                    <p>As a techno-optimist, I am the first to agree that these tools are very, very cool and are making the world spectacular. But when we consume generated information, we inherently consume bias. In the spirit of moderating content safety, there has been a rush towards Alignment Science (<a href="https://alignment.anthropic.com/" target="_blank">https://alignment.anthropic.com/</a>) — essentially controlling, altering, or limiting content for the sake of upholding human values.</p>
+                    <p>Simply put, LLMs compute probability distributions for coming words given preceding text, and alignment research aims to mess with that, increasing the likelihood of an HHH (harmless, helpful, honest) response. This could very easily be seen as censorship when taken too far, and is mainly carried out in the following ways.</p>
+                    <p>(1) Data preparation. During DeepSeek training (<a href="https://arxiv.org/pdf/2405.04434" target="_blank">https://arxiv.org/pdf/2405.04434</a>), 'controversial' information about regional cultures was removed, and the model then understandably performed worse on test sets associated with those cultures. (2) Post-training alignment. (IMO the most valid, and the core of Anthropic's Constitutional AI methods). This technique adds additional training steps to a base model, usually adding a reinforcement learning from human feedback (RLHF) layer. This means that human crowdworkers have chosen between two model outputs as more helpful/harmless, and the model is rewarded for choosing the 'more HHH' response.</p>
+                    <p>At the surface level, 'aligning with human values' seems like a noble goal and a step towards AI safety. I worry, however, that techniques like data cleaning and rule-based query refusal will only serve as information control in the hands of a bad actor. Examples follow. Leading up to the U.S. election, ChatGPT refused all queries about polling data and voter facts. In China, DeepSeek currently refuses queries asking about the public opinion of Xi Jinping.</p>
+                    <p>Post-training alignment, however, IMO holds great promise. If we can break down muddy 'value' based issues into technical problems, we move one step closer to a more transparent information flow. Questions like "should the response focus on being more helpful or harmless?" are inherently philosophical and discussion-heavy. I don't deny that there are long-standing frameworks for healthy debate of such issues in many fields (and conversations like that are imperative!), but I believe that if we can leverage mathematical models to analyze tradeoffs, there will be significant improvements in the short term.</p>
+                    <p>Additionally, aside from simple request refusal, part of the issue with knowledge consumption is the lack of a clear 'thought process.' If consumers could understand the exact chain of thought a model uses when answering a query, they are far more likely to (1) understand why the query may be considered unsafe and modify it or clarify their intentions, (2) find potential reasoning errors and the cause of a wonky output, and (3) simply increase trust in the tools they rely on.</p>
+                    <p>Eventually, I posit that alignment will be so heavily integrated into policy that we will have a separate 'constitution' simply for AI tools. I eagerly await this era, but meanwhile, in the spirit of Independence Day, I encourage the revival of independent thinking.</p>
+                </div>
+            </div>
+
+            <!-- Post 6: Designer Genes -->
+            <div class="blog-post">
+                <h2 class="post-title">Designer Genes, Biotech Races, & Open Source Science</h2>
+                <p class="post-date">June 12, 2025</p>
+                <div class="post-content">
+                    <p>In 2018, Chinese scientist He Jiankui created the first ever CRISPR edited human embryos (twin girls made resistant to HIV), and spent the following three years in jail. Regarded by some as a fraud and others as a Frankenstein-like visionary, he was indisputably the first to pull something this radical, no matter how it was received by the scientific community.</p>
+                    <p>Fast forward 7 years to June 4, 2025, when Nucleus Genomics, led by Kian Sadeghi, officially launched their genetic optimization service for embryos. Parents can choose traits to reduce risks for preventable conditions as well as optimize for 'ideal' characteristics, like intelligence (slippery slope).</p>
+                    <p>In 7 years, the same science that sent a man to jail has now become somewhat commoditized, and that is both fascinating (biotech moves so quickly!) and terrifying (are we building a new race of humans?)</p>
+                    <p>Right now, one week post Nucleus Genomics launch, this field has never been under more fire. As a cautious supporter of this space, I believe that gene editing has immeasurable benefits in principle, but fundamentally boils down to 4 (ish) important tenants: interdisciplinary science/explainability, global competition in biotech, timing, & unbounded frivolousness. In 5 years, I may eat my words when this technology emerges as the ultimate Pandora's box, but for now, my thoughts are as follows.</p>
+                    <p>We have to remember that these advances are in biotech, not just tech. Part of the criticism Jiankui received came from the fact that neither he nor his few team members had a background in genetics/medicine, but were virtually conducting clinical trials. When reading about this problem online, I came across two broad perspectives, one coming from 'bio' and the other from 'tech.' The former emphasized moral ambiguity and avoided adoption, while the latter optimistically emphasized preventative medicine, fitting evolution to a classic optimization problem. Problems arise when these two sides cannot find a safe overlap. I believe that casting new technology entirely as unethical only builds unfounded fear, rather than defining a safe bounded space to test and regulate it. Currently, the U.S. gov has no regulations on gene editing (the EU does!), the pioneers are mostly people with math/cs/physics backgrounds, and scientists have not been transparent with results (how are those twin girls doing now?). Of course people are scared! (Sidenote: I actually think Nucleus harnesses this idea very well — they have strong clinical teams/transparency. But might be too early for their time, will discuss later)</p>
+                    <p>Why haven't results been collaborative and transparent? IMO, a sense of global competition in biotech. Although it wasn't well received at the time, Jiankui (and therefore China) was first. First to pioneer this technology, first to get people talking, and first to inspire research in other labs. In order for this field to flourish, we need to learn from the mistakes made. So much is unknown about the human genome, so why conceal what we do know?</p>
+                    <p>Before a company like Nucleus/Orchid can successfully take off, I believe we need much more trust and testing. CRISPR on embryos can make edits in unintended locations, not edit all cells uniformly, and lacks safe delivery mechanisms. At best, I posit that we are at least 5 years from tested trusted use. What scares me is that affluent parents can choose 'optimal' traits right now with long-term side effects that are fundamentally unknowable. And many of these are probability based. Well-off parents may be tempted to pay for editing out a gene which increases risk of breast cancer by 25%, for example, but is that worth a potential shorter life expectancy, lowered immunity to other diseases, and countless other side effects? It's easy to get lost in one side of this coin when the other side's results only become clear a lifetime later.</p>
+                    <p>This process costs approx $6000 currently, which for many families seems worth it to relieve themselves of long term pain. This is slightly less ambiguous for single-gene traits (ex tay sachs), but becomes a lot more tricky when companies claim they can conduct 'probability scoring assessments' for polygenic (and 90% nurture driven imo) traits like intelligence. Suddenly, we have well-off parents picking the brightest embryos with the most longevity, and this for me brings up 2 main concerns. (1) We have successfully messed with the one canonically random process in nature (mutation, yay us) (2) Have we created a system where genetic advantages concentrate within the upper class? Where richer people are somehow smarter by nature? Quite a dystopian thought.</p>
+                    <p>So if we facilitate collaborations between clinicians and AI scientists, conduct comprehensive and transparent research, and define and regulate a first small (but slowly increasing) space we deem ethical, in 5 years or so, we may have something both trusted and revolutionary. Of course, like it is with all new biotech, this process will be slow and full of fire. I'm sure when it was first suggested to inject people with a concoction of dead viral bits, people thought vaccines were batshit crazy, but here we are.</p>
+                    <p>Question I am currently thinking about: if parents select the same 'ideal' traits for their embryos and this process remains legal, will we be in worse shape overall than how we started? Genetic diversity serves as insurance to unforeseen challenges, and narrowing the gene pool may unintentionally put us back to square one..just food for thought, only time will tell.</p>
+                </div>
+            </div>
+
+            <!-- Post 7: Manhattan Project -->
+            <div class="blog-post">
+                <h2 class="post-title">What We Can Learn from the Manhattan Project</h2>
+                <p class="post-date">June 4, 2025</p>
+                <div class="post-content">
+                    <p>"Now I am become death, the destroyer of worlds" - from the Bhagavad Gita, quoted by Oppenheimer after the first ever deployment of the atomic bomb.</p>
+                    <p>In 1945, the culmination of the Manhattan Project resulted in approximately a quarter million lives lost. That number is difficult to comprehend, but what is even more fundamentally inscrutable about this tragedy is the question of its necessity.</p>
+                    <p>Most historical retellings and perspectives from scientists involved in the Manhattan Project reflect the following view: regardless of the consequences, building the atomic bomb served as a means to an end, defeating Nazi Germany. However, evidence like interception of Japanese wires revealed their plans to surrender, and U.S. intelligence determined that Germany was nowhere near developing a weapon of similar scale.</p>
+                    <p>I think 2 scientists (yes, 2, even though we only have a movie about the first), are key to understanding this problem's relevance in today's world. (1) Robert Oppenheimer and (2) Joseph Rotblat. Originally, both physicists were committed to the cause - building to defeat Germany. When Rotblat came to know that the technology would have negligible effect in a competitive WW2 advantage and instead be useful for one-upping the Soviets, he left, spending the rest of his life working to denuclearize the world (1995 winner of Nobel Peace Prize; ironic to me since Alfred Nobel invented dynamite). Oppenheimer, however, saw through the production of the atomic bomb while grappling with moral indecision (portrayed beautifully by the movie in my opinion). He later promoted denuclearization and opposed hydrogen bomb proliferation, but this proved to be too little too late.</p>
+                    <p>With the increasing role of AI in defense, this fundamental dichotomy of values is interesting to apply to perspectives today.</p>
+                    <p>Rotblat-like individuals appear to be the highest form of moral being -- refusing to build potentially destructive technology no matter the political/economic gain. (Note: I say 'potentially' not in the context of the bomb, which predictably led to loss of life, but referring to modern developing technology with untested/unknown applications. Ex. ask an engineer to build a tool for the designated purpose of killing others and most will object, but when the DOD offers oodles of funding for robotics research for vague future militaristic advantages, it's more difficult to turn away). I respect this stance deeply.</p>
+                    <p>However, I believe that building (not! dropping!) the atomic bomb was quite a crucial step for America to thrive as the world power it is today. Choosing to avoid militaristic innovation in a political climate where eight other nations are making it a priority would be incredibly naive. Choosing how and when to use these technologies, however, remains the key moral question.</p>
+                    <p>AI can be useful for military operations in the following ways. Minimizing civilian casualties through greater precision in combat, increasing cyber security, supporting/advising human decision-making, integrating dozens of live data feeds, etc. I think the biggest benefits AI brings lie simply within providing a full picture of all data available, adding some nuance/strategy (<a href="https://blog.palantir.com/safeguarding-freedom-87080c30a712" target="_blank">https://blog.palantir.com/safeguarding-freedom-87080c30a712</a>) which may elude the human mind. The key here IMO is to embrace AI in the military like we aim to do in healthcare: as a decision support tool to improve efficiency but never replace human decision-making (like google, openai, etc have adopted). These types of advancements are not entirely different from the increases in efficiency gained from the adoption of radio, internet, etc.</p>
+                    <p>Enter autonomous robotics.</p>
+                    <p>The Ukraine-Russia war brought the arrival of autonomous weapons used in combat primarily in the form of drones. These drones were capable of autonomous flight and targeting, reducing the role of human oversight. Russia additionally deployed autonomous ground vehicles, which could benefit human life by removing people from the direct line of combat, but could also result in unintended civilian casualties. This marked the world's first 'robot war.' The Pentagon wants to catch up with russia/china. They aim to produce autonomous ground vehicles by 2026, as well as fully autonomous lethal weapons in a few more years to come.</p>
+                    <p>As young scientists and engineers, it's hard to ignore the opportunities that come from aligning with defense goals, but also important to understand that the creators of technology rarely determine how it's used on the battlefield. I.e. was it oppenheimer's fault for building the bomb or truman's for deploying it? Unknowable.</p>
+                    <p>Apologies to my 2 readers for the long post..much gratitude to you both.</p>
+                </div>
+            </div>
+
+            <!-- Post 8: India Rape Crisis -->
+            <div class="blog-post">
+                <h2 class="post-title">Overview of Rape Crisis in India + Indian American Action?</h2>
+                <p class="post-date">May 27, 2025</p>
+                <div class="post-content">
+                    <p>I caved into the propaganda and bought Zarna Garg's memoir, This American Woman (I ran to amazon). After experiencing quite an emotional range, finishing the book in one sitting, and leaving a 5/5 goodreads review, I went down a rabbit hole about one of the more difficult topics Zarna touches on -- violence against women.</p>
+                    <p>One line stuck with me in particular.</p>
+                    <p>"In India, even the youngest girls were taught exactly what rape was and to fear it"</p>
+                    <p>I put the book down. As an Indian-American girl, I subscribed to the mentality towards assault taught in American schools: not mentioned in elementary school (for the sake of peace of mind), and warned about in health class later on. I don't want to downplay the magnitude of this problem in America. Violence against women happens everywhere; here, I moreso want to (1) discuss its severity and stigma in India and (2) clarify what I believe to be the role of Indian Americans (such as yours truly) regarding this crisis.</p>
+                    <p>However much media attention this issue has gained (largely through landmark cases like 2012 Nirbhaya, 2024 doctor's protests in Kolkata, etc), it remains a silent epidemic. There is rampant underreporting for a number of reasons -- difficulty gaining justice in corrupt police systems, social stigma, economic/religious disadvantages, etc. Not to mention that a large fraction of assault cases are not eligible to be reported, given that Indian gov has not criminalized marital rape.</p>
+                    <p>Reading about and understanding the complexities of this issue was eye-opening, and I encourage anyone reading this to do the same.</p>
+                    <p>After much reflection, I came to observe the following: (1) the Indian diaspora in the United States has done well, reaching high median household incomes and around 40% earning graduate degrees (general heuristics, not insinuating that these are by any means the best indicators of success), (2) many Indians have reached prominent positions in large corporations & U.S. gov, leading to a potential for significant influence.</p>
+                    <p>Aforementioned success results in responsibility. We must use resources and wealth to enact positive change. At the corporate/older/wealthier level, that may entail donating to Indian orgs like sayfty or pressuring Indian gov officials to enact policies ending sexual violence. 5.2mil Indian Americans vs 1.3bil Indians may seem steep, but America is a world power. As students, we should learn & educate. I believe that is the most powerful action we can take at this stage of our lives. Whether its reading more news, posting on social media, starting difficult conversations, whatever. Be mindful that as Indian-Americans, we are lucky to not be subject to the same threat of violence that we just as easily could have been, had we been born into different circumstances.</p>
+                    <p>India is said to be the largest democracy in the world, but half their population is not truly free.</p>
+                    <p>Thanks for lifting the veil over my eyes, Zarna.</p>
+                </div>
+            </div>
+
+            <!-- Post 9: Climate Doom -->
+            <div class="blog-post">
+                <h2 class="post-title">Climate Doom & Industrial Revolutions</h2>
+                <p class="post-date">May 23, 2025</p>
+                <div class="post-content">
+                    <p>I spend more time than I should thinking. I suppose I enjoy (1) ruminating over information I already know, as well as (2) consuming as much media as I possibly can. In my journey of pursuing (2), I came across John Green's podcast The Anthropocene Reviewed, where he evaluates human-centered contributions to the planet with painful honesty. One segment in particular which has led to at least 10 (?) spinoff conversations, was "humanity's temporal range." Modern humans have spent less time on earth (250,000 years) than any other species. Yet, we have caused ecological catastrophe and the ending of other species, which saddens me deeply. I spent a fair bit of time mourning this definite loss, but later grew to realize that this problem is one that we both exacerbate and have the greatest capacity to repair, which intrigues me.</p>
+                    <p>In conversation with [vr], I discovered an important divergence in mindset concerning industrial revolutions -- context below.</p>
+                    <p>AI increases the productivity of virtually every task, but LLMs also cause significant environmental damage. (I personally don't see proportional scales in productivity, but i'll discuss that in a later post). Each query to chatGPT consumes 10x more energy than a google search, and significant water quantities must be used to cool hardware.</p>
+                    <p>Even so, I have never been more excited to enter this field. I believe that the overwhelming democratization of knowledge is the most powerful, beautiful, equitable revolution to happen thus far.</p>
+                    <p>I identify 3 (?) main environmental problems due to the AI boom. (1) energy consumption, (2) carbon emissions, and (3) water usage. Current solutions point to techniques like pruning and knowledge distillation to reduce computational load, as well as sustainable hardware and data centers. But the thing is, we need to harness the idea that (1) ai is improving the present in real-time, not just the future, and (2) sustainable ai is a ball already in motion, not one that needs to be pushed off the ground. I posit that in 5 years, both energy consumption and carbon emissions will reduce by 10-fold -- here's why. Be.Ta labs recently built the first entirely solar-powered LLM, Aegis (<a href="https://huggingface.co/blog/Severian/powering-the-future-beta-labs-revolutionary-100-so" target="_blank">https://huggingface.co/blog/Severian/powering-the-future-beta-labs-revolutionary-100-so</a>). Aside from fully sustainable training and lower computational costs, Be.Ta labs actively puts pressure on other tech giants to emphasize eco-AI and encourages more informed consumer choices.</p>
+                    <p>I just wrote a bunch of words, but I want to take a moment to appreciate the gravity of this accomplishment. The landmark paper that transformed (lol) this movement, "Attention is All You Need," was published in 2017. This field is an 8-year old: a remarkable 3rd-grader that built its first GPT at 1 year old, grew it from 117 million to 1.76 trillion parameters, and gained environmental conciousness by grade school. I am in awe of what humans can do with the right combination of problem-solving, brilliance, and conscientiousness.</p>
+                    <p>All this to say -- I believe that the two perspectives emerging from the conscientious consumer are as follows. (1) limit technological use, forgoing some degree of productivity, but making the most 'green' choice, or (2) take advantage of said productivity to maximize current benefit. I am not speaking only to/for ML enthusiasts when I say this -- imagine how healthcare, education, and infrastructure would boom if everyone truly learned and maximized the potential of ai. And this will only grow :) 100 years ago, our planet may have been in better shape, but our average lifespan was 50 years. I am a firm believer that all informed decisions are valid ones, and while I personally don't carry perspective (1), I respect those who do for living in the present.</p>
+                    <p><a href="https://arxiv.org/html/2412.04782v1" target="_blank">https://arxiv.org/html/2412.04782v1</a></p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
